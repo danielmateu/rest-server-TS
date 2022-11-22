@@ -6,11 +6,11 @@ import { deleteUsuario, getUsuario, getUsuarios, postUsuario, putUsuario } from 
 
 const router =  Router();
 
-router.delete('/', deleteUsuario);
-router.get('/', getUsuarios);
-router.get('/:id', getUsuario);
-router.post('/', postUsuario);
-router.put('/', putUsuario);
+router.delete('/:id',   deleteUsuario);
+router.get('/',         getUsuarios);
+router.get('/:id',      getUsuario);
+router.post('/',        postUsuario);
+router.put('/:id',      putUsuario);
 
 
 
